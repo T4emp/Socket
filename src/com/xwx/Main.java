@@ -16,12 +16,14 @@ public class Main {
         num = scanner.nextInt();
         switch(num){
             case 1:
+                //Ввод текста через консоль
                 System.out.println("Введите текст");
                 Scanner scanner1 = new Scanner(System.in);
                 i = client.Msg(scanner1.nextLine());
                 System.out.println("Результат: " + i);
                 break;
             case 2:
+                //Выбор файла через стандартные средства Java
                 System.out.println("Укажите файл");
                 JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
                 jFileChooser.setDialogTitle("Выберите текстовый файл");
